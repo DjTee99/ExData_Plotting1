@@ -18,9 +18,10 @@ png("plot4.png", width = 480, height = 480)
 par(mfrow=c(2,2))
 
 ## Plot1
-
-hist(dt[[3]],main =" ",xlab = "Global Active Power(kilowatts)",
-     col = "red",xlim = c(0,6))
+x = dt[[10]] # DateTime
+g = dt[[3]]  # Globalactive power
+ 
+plot(x,g,main =" ",xlab= " ",ylab = "Global Active Power(kilowatts)", col = "black",type = "l")
 
 ## Plot2
 
