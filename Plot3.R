@@ -26,7 +26,7 @@ t = dt[[10]]
 plot(t,x, xlab = "",ylab = "Energy-sub metering",type = "l")
 lines(t,y, col = "red")
 lines(t,z, col = "blue")
-legend("topright", col = c("black","red","blue"),legend = c("Sub_metering_1  ","Sub_metering_2  ", "Sub_metering_3  "))
+legend("topright", lty = 1,col = c("black","red","blue"),legend = c("Sub_metering_1  ","Sub_metering_2  ", "Sub_metering_3  "))
 
 dev.off()
 
